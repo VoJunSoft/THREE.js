@@ -1,0 +1,65 @@
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    padding: 0px;
+    transition: .5s;
+    width: 90%;
+    text-align: center;
+    box-shadow: 1px 2px 2px #323232;
+    transform: rotate(0deg) skew(0deg) translate(0px, 0px);
+    height: 50px;
+    background: #323232;
+    border-radius: 2px;
+    box-shadow: -7px 7px 7px rgba(0, 0, 0, .5);
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+a.facebook {
+    background-color: #00aced;
+}
+
+a.youtube {
+    background-color: #a52a2a;
+}
+
+a.medium {
+    background-color: #171717
+}
+
+a.git {
+    background-color: #040526e0;
+}
+
+a.googlePlay {
+    background-color: darkgreen;
+}
+
+a span {
+    transition: 0.5s;
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+a:after {
+    transform: .5s;
+    position: absolute;
+    transform: rotate(5deg) skewX(-25deg);
+}
+
+a:before {
+    transform: .5s;
+    position: absolute;
+    transform: rotate(5deg) skewX(-25deg);
+}
+
+a:hover {
+    transform: rotate(-25deg) skew(25deg) translate(10px, -15px);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+a:hover span {
+    color: #fff;
+}

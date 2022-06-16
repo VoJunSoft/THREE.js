@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster&family=Press+Start+2P&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    /* background: url("https://wallpaperaccess.com/full/1155041.jpg"); */
+}
+
+.scene,
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 5px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-right: -120%;
+    }
+    to {
+        margin-right: 0;
+    }
+}
+
+.socialLinksHeader {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+.titleText {
+    font-family: 'Press Start 2P', Tahoma, Verdana, sans-serif;
+    font-size: 30px;
+    color: #040526e0;
+    margin-top: 5px;
+    letter-spacing: 9px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #a52a2a;
+}
+
+.bodyText {
+    font-family: 'Lobster', Tahoma, Verdana, sans-serif;
+    font-size: 20px;
+    color: #040526e0;
+    letter-spacing: 3px;
+}
+
+.LandingPageLayout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( #323232, #ffffff);
+    height: 18%;
+    width: 100%;
+    /* box-shadow: 0px 3px gray;
+    margin-bottom: 3px; */
+}
+
+.Pillars {
+    display: flex;
+    flex-direction: row;
+    height: 57%;
+    justify-content: space-evenly;
+}
+
+.LeftPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+}
+
+.RightPost {
+    width: 80%;
+}
+
+.FooterProjects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient( #ffffff, #323232);
+    height: 25%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+    /* box-shadow: 0px -3px gray;
+    margin-top: 3px; */
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+img {
+    height: 92%;
+    box-shadow: -4px 4px #32323255;
+    border-radius: 5px;
+    transition: height .2s;
+}
+
+img:hover {
+    height: 100%;
+    cursor: pointer;
+}
