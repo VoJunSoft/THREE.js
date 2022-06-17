@@ -8,7 +8,7 @@ let textMesh2;
 let star;
 
 function init() {
-    container = document.querySelector(".RightPost");
+    container = document.querySelector(".Scene");
 
     //Create scene
     scene = new THREE.Scene();
@@ -60,12 +60,17 @@ function init() {
 
     //Text
     const txtLoader = new THREE.FontLoader();
-    const Bio = "MCSD, Microsoft Certified Developer 2000. \n" +
+    const Bio = "Education & Career : \n" +
+        "MCSD, Microsoft Certified Developer 2000. \n" +
         "Computer Science, B.Sc, 2005. \n" +
         "Masters in Business Administration, MBA, 2011. \n" +
         "Supply Chain Management, 2010 - 2020. \n" +
         "FullStack Development, Tsofn, 2020. \n" +
-        "React Native && JavaScript Ninja, 2020 - 2022. \n"
+        "React Native && JavaScript Ninja, 2020 - 2022. \n\n" +
+        "Recreational : \n" +
+        "PADI Master Diver and IANT Technical Diving. \n" +
+        "Mix Martial Arts Instructor, Wingate, 2018 \n"
+    
     txtLoader.load('../fonts/optimer_bold.json', function(font) {
         const geometry = new THREE.TextGeometry(Bio, {
             font: font,
