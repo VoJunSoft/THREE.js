@@ -15,6 +15,8 @@ a {
     box-shadow: -7px 7px 7px rgba(0, 0, 0, .5);
     text-decoration: none;
     border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px
 }
 
 a.facebook {
@@ -46,17 +48,17 @@ a span {
 a:after {
     transform: .5s;
     position: absolute;
-    transform: rotate(5deg) skewX(-25deg);
+    transform: rotate(5deg) skewX(-7deg);
 }
 
 a:before {
     transform: .5s;
     position: absolute;
-    transform: rotate(5deg) skewX(-25deg);
+    transform: rotate(5deg) skewX(-7deg);
 }
 
 a:hover {
-    transform: rotate(-25deg) skew(25deg) translate(10px, -15px);
+    transform: rotate(-5deg) skew(7deg) translate(10px, -15px);
     box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
 }
 
