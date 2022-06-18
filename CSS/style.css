@@ -19,8 +19,8 @@ canvas {
 
 p {
     margin: 5px;
-    animation-duration: 1s;
-    animation-name: slidein;
+    /* animation-duration: 1s;
+    animation-name: slidein; */
 }
 
 @keyframes slidein {
@@ -34,12 +34,14 @@ p {
 
 .titleText {
     font-family: 'Press Start 2P', Tahoma, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     color: #040526e0;
     margin-top: 5px;
     letter-spacing: 2px;
     font-weight: bold;
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .bodyText {
@@ -49,7 +51,7 @@ p {
     letter-spacing: .5px;
     text-align: center;
     overflow: hidden;
-    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .LandingPageLayout {
