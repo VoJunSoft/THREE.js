@@ -58,7 +58,7 @@ a:before {
 }
 
 a:hover {
-    transform: rotate(-5deg) skew(7deg) translate(10px, -15px);
+    transform: rotate(-10deg) skew(-10deg) translate(3px, -7px);
     box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
 }
 
